@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import "../styles/components/carroussel.scss"
+import logements from '../assets/data/logements.json';
 
     //component de carroussel
 const Carroussel = ({ data }) => {
 
     const { id } = useParams();
-    const filteredLogements = data.filter((logement) => logement.id === id);
+    const filteredLogements = logements.filter((logement) => logement.id === id);
 
     const [currentSlide, setCurrentSlide] = useState(0);
 
