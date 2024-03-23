@@ -1,6 +1,7 @@
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+    //génère des étoiles sur les pages des logements
 const generateStars = (rating) => {
     const stars = [];
     for (let i = 1; i <= 5; i++) {

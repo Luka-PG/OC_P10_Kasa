@@ -3,8 +3,11 @@ import { useParams } from 'react-router-dom';
 import Collapse from "../components/Collapse";
 import generateStars from './stars';
 
+    //components d'affichage des infos des logements
 const InfosLogement = ({ data }) => {
+        //on vient chercher l'id dans l'url
     const { id } = useParams();
+        //comparaison de l'id de l'url et les id du fichier json pour trouver le logement correspondant
     const filteredLogements = data.filter((logement) => logement.id === id);
 
     return (

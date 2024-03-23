@@ -6,6 +6,7 @@ import backgroundImageAbout from "../assets/img/backgroundAbout.png";
 import Footer from "../components/Footer";
 import Collapse from "../components/Collapse";
 
+  //page à propos
 const About = () => {
 
   return (

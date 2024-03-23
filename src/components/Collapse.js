@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import arrow from '../assets/img/arrow-open.png'
 
+    //component décentralisé pour collapse de façon plus propre
 const Collapse = ({ title, children }) => {
 
       const [isOpen, setIsOpen] = useState(false); 

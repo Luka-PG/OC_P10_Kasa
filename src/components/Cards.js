@@ -2,6 +2,7 @@ import React from 'react';
 import logements from '../assets/data/logements.json';
 import { Link } from 'react-router-dom';
 
+  //component d'affichage des cartes de la page d'accueil
 const Cards = () => {
 
   return (

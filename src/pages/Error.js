@@ -1,8 +1,9 @@
 import React from 'react';
-import Logo from './Logo';
-import Navigation from './Navigation';
-import Footer from './Footer';
+import Logo from '../components/Logo';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+
 
 const Errorpage = () => {
     return (

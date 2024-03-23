@@ -2,33 +2,25 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import "../styles/components/carroussel.scss"
 
-
+    //component de carroussel
 const Carroussel = ({ data }) => {
+
     const { id } = useParams();
+    const filteredLogements = data.filter((logement) => logement.id === id);
 
     const [currentSlide, setCurrentSlide] = useState(0);
 
-    const filteredLogements = data.filter((logement) => logement.id === id);
-
-    if (
-        filteredLogements.length === 0 ||
-        !filteredLogements[0].pictures ||
-        !filteredLogements[0].pictures.length
-    ) {
-        return;
-    }
-
+        //affichage du nombre total d'images et des boutons du carroussel
     const totalSlides = filteredLogements[0].pictures.length;
+        // affichage des boutons du carroussel si il y à plus d'une image dans le carroussel
     const showCounterButtons = totalSlides > 1;
 
+        // affichage des boutons du carroussel en fonctions du nombres d'images du logement 
     const nextSlide = () => {
         setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
     };
-
     const prevSlide = () => {
-        setCurrentSlide(
-            (prevSlide) => (prevSlide - 1 + totalSlides) % totalSlides
-        );
+        setCurrentSlide((prevSlide) => (prevSlide - 1 + totalSlides) % totalSlides);
     };
 
     return (

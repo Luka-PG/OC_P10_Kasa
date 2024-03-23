@@ -6,6 +6,7 @@ import backgroundImageHome from '../assets/img/backgroundHome.png'
 import Cards from '../components/Cards';
 import Footer from '../components/Footer';
 
+    //page d'accueil 
 const Home = () => {
     return (
         <>
