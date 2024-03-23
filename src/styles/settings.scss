@@ -1,0 +1,43 @@
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+html{
+    width: auto;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+header {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    padding-left: 50px;
+    padding-right: 60px;
+    margin: 0 auto;
+
+}
+li {
+    list-style-type: none;
+    color: #FF6060;
+}
+
+a {
+    text-decoration: none;
+}
