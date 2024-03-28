@@ -13,7 +13,6 @@ const Accommodation = () => {
 
     //check si l'id de l'url correspond au url dans le fichier json
     const checkExistingId = logements.find(logement => logement.id === id);
-    console.log(checkExistingId)
 
     //si le check renvoi une valeur undefined alors page erreur sinon la page du logement choisi s'affiche
     if(checkExistingId === undefined){
